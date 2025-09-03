@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
 
   const verifyToken = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL}/users`);
+      await axios.get(`${API_BASE_URL}/users`);
       // If we get here, token is valid
       const userData = JSON.parse(localStorage.getItem('user'));
       setUser(userData);
