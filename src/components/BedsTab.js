@@ -5,7 +5,6 @@ const BedsTab = () => {
   const [beds, setBeds] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [isolationFilter, setIsolationFilter] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   // Mock data for beds - in real app this would come from API
   const mockBeds = [

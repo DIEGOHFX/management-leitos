@@ -3,8 +3,8 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useAuth } from '../contexts/AuthContext';
 
 const Header = () => {
-  const { toggleTheme, isDark } = useTheme();
-  const { logout, user } = useAuth();
+  useTheme();
+  useAuth();
 
   // Mock bed summary data - in real app this would come from API
   const bedSummary = {

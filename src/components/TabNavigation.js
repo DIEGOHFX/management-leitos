@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 
 const TabNavigation = ({ activeTab, setActiveTab, userType }) => {
   const { toggleTheme, isDark } = useTheme();
-  const { logout, user } = useAuth();
+  const { logout } = useAuth();
 
   const tabs = [
     { id: 'tab-painel', label: 'Leitos', visible: true },
